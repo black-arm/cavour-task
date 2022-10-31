@@ -1,0 +1,20 @@
+
+.flex {
+    display: flex;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.f-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.f-space-between {
+    justify-content: space-between;
+}
+
+.f-baseline {
+    justify-content: baseline;
+}
