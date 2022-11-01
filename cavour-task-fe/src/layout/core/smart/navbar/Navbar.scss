@@ -1,25 +1,57 @@
+@import '../../../../assets/scss/variables.scss';
+
 nav {
     width: 100vw;
     border-bottom: 1px solid lightgray;
-    justify-content: start;
+    justify-content: space-between;
+    padding: 0.75rem 0rem;
+    position: relative;
+
+    
     .logo {
+        padding-left: 0.5rem;
         font-size: large;
         font-weight: 900;
-        padding: 0.75rem;
         align-items: center;
         display: flex;
     }
     ul {
-        padding: 0.75rem;
         li {
             font-size: medium;
-            color: #4d729f;
+            color: $navbar-item-color;
             padding: 0.5rem 1.5rem;
+            cursor: pointer;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: $navbar-item-color;
+            }
         }
     }
-    
-    .account-section {
+    .section {
         display: flex;
         align-items: center;
     }
+    
+    .pr-1 {
+        padding-right: 1rem;
+    }
+    
+    .margin-icon {
+        margin: 0rem 0.5rem;
+    }
+
+    .projects-list {
+        position: absolute; 
+        border: 1px solid lightgray;
+        top: 80%;
+        background-color: $white-color;
+        display: block;
+        li:hover {
+            background-color: $li-bg-color;
+        }
+        
+    }
+
 }

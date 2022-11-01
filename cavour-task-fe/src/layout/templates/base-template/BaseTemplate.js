@@ -10,7 +10,7 @@ export default function BaseTemplate() {
         <Navbar></Navbar>
         <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/helo" element={<div>hello world</div>}></Route>
+            <Route path="/new-project" element={<div>Project Page</div>}></Route>
         </Routes>
     </>
 }
