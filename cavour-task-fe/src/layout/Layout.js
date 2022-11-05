@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 const BaseTemplate = React.lazy(() => import('./templates/base-template/BaseTemplate'))
 const AuthTemplate = React.lazy(() => import('./templates/auth-template/AuthTemplate'))

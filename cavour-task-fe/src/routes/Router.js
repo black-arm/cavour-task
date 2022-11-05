@@ -8,7 +8,6 @@ export const Router = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/*" element={<Layout />} />
-            <Route path="customer" element={<div>Hello Customer</div>} />
           </Routes>
         </BrowserRouter>
     )

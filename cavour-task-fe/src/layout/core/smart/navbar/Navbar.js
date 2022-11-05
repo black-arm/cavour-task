@@ -7,7 +7,7 @@ import { ReactComponent as ExpandMore } from '../../../../assets/icons/expande_m
 import { ReactComponent as AddProject} from '../../../../assets/icons/add_project.svg';
 import { Link } from 'react-router-dom';
 
-export default function Navbar() {
+export function Navbar() {
 
     const [isOpenProjectDropdown, setIsOpenProjectsDropdown] = useState(false);
 
@@ -55,7 +55,9 @@ export default function Navbar() {
             <Help className='margin-icon'/>
             <Settings className='margin-icon'/>
             <img src={require('../../../../assets/images/default-user.png')} 
-                alt='' width={24} height={24} className="margin-icon" style={{border: '1px solid lightgray'}} />
+                alt='' width={24} height={24}
+                className="margin-icon"
+                style={{border: '1px solid lightgray'}} />
         </div>
     </nav>
 }
